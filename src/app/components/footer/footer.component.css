@@ -1,0 +1,50 @@
+:host {
+	display: block;
+}
+
+.footer {
+	width: min(960px, calc(100% - 2rem));
+	margin: 0 auto 1rem;
+	padding: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.75rem;
+	background: #ffffff;
+}
+
+.footer-brand {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+.footer span {
+	display: block;
+	margin-top: 0.3rem;
+	color: #6b7280;
+	font-size: 0.95rem;
+}
+
+.footer-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	color: #374151;
+}
+
+.footer-links a:hover {
+	color: #111827;
+}
+
+@media (max-width: 640px) {
+	.footer {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}

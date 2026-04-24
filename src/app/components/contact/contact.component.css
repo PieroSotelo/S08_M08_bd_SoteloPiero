@@ -1,0 +1,96 @@
+:host {
+	display: block;
+}
+
+.contact {
+	width: min(960px, calc(100% - 2rem));
+	margin: 0 auto;
+	padding: 1.25rem 0 1.75rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.9rem;
+}
+
+.contact-copy,
+.contact-card {
+	padding: 0.9rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.6rem;
+	background: #ffffff;
+}
+
+.section-kicker {
+	font-size: 0.85rem;
+	color: #6b7280;
+}
+
+.contact-copy h2 {
+	margin: 0.35rem 0 0;
+	font-size: 1.15rem;
+}
+
+.contact-copy p {
+	margin: 0.6rem 0 0;
+	font-size: 0.92rem;
+	color: #4b5563;
+}
+
+.contact-meta {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.6rem;
+	margin-top: 0.8rem;
+}
+
+.contact-meta div {
+	padding: 0.65rem;
+	border-radius: 0.45rem;
+	background: #f9fafb;
+}
+
+.contact-meta span {
+	display: block;
+	margin-top: 0.2rem;
+	font-size: 0.88rem;
+	color: #6b7280;
+}
+
+.contact-card {
+	display: grid;
+	gap: 0.7rem;
+}
+
+.contact-card label {
+	display: grid;
+	gap: 0.3rem;
+}
+
+.contact-card span {
+	font-size: 0.88rem;
+	color: #374151;
+}
+
+.contact-card input {
+	padding: 0.6rem 0.7rem;
+	border: 1px solid #d1d5db;
+	border-radius: 0.45rem;
+}
+
+.contact-card input::placeholder {
+	color: #9ca3af;
+}
+
+.contact-card button {
+	padding: 0.6rem 0.85rem;
+	border: 1px solid #111827;
+	border-radius: 0.45rem;
+	background: #111827;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+@media (max-width: 900px) {
+	.contact {
+		grid-template-columns: 1fr;
+	}
+}
